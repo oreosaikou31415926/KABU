@@ -1,11 +1,10 @@
 import subprocess
 import sys
-subprocess.run(["pip","install","streamlit","--no-warn-script-location"])
-subprocess.run(["pip","install","yfinance","--no-warn-script-location"])
-subprocess.run(["pip","install","pandas","--no-warn-script-location"])
-subprocess.run(["pip","install","numpy","--no-warn-script-location"])
-subprocess.run(["pip","install","scikit-learn","--no-warn-script-location"])
-subprocess.run(["export",'PYTHONPATH=/home/appuser/.local/lib/python3.11/site-packages'])
+subprocess.run(["pip","install","streamlit","-t","/home/appuser"])
+subprocess.run(["pip","install","yfinance","-t","/home/appuser"])
+subprocess.run(["pip","install","pandas","-t","/home/appuser"])
+subprocess.run(["pip","install","numpy","-t","/home/appuser"])
+subprocess.run(["pip","install","scikit-learn","-t","/home/appuser"])
 import streamlit as st
 import pandas as pd
 import yfinance as yf
