@@ -1,9 +1,9 @@
 import subprocess
-subprocess.run(["pip","install","streamlit"])
-subprocess.run(["pip","install","yfinance"])
-subprocess.run(["pip","install","pandas"])
-subprocess.run(["pip","install","numpy"])
-subprocess.run(["pip","install","scikit-learn"])
+subprocess.run(["pip","install","streamlit","--no-warn-script-location"])
+subprocess.run(["pip","install","yfinance","--no-warn-script-location"])
+subprocess.run(["pip","install","pandas","--no-warn-script-location"])
+subprocess.run(["pip","install","numpy","--no-warn-script-location"])
+subprocess.run(["pip","install","scikit-learn","--no-warn-script-location"])
 import streamlit as st
 import pandas as pd
 import yfinance as yf
