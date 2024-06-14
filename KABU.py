@@ -1,3 +1,9 @@
+import subprocess
+subprocess.run(["pip","install","streamlit"])
+subprocess.run(["pip","install","yfinance"])
+subprocess.run(["pip","install","pandas"])
+subprocess.run(["pip","install","numpy"])
+subprocess.run(["pip","install","scikit-learn"])
 import streamlit as st
 import pandas as pd
 import yfinance as yf
